@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image:  linear-gradient(to bottom left, rgba(124, 122, 122, 0.603), rgba(255, 255, 255, 0.641)), url('/images/bodybackground.jpg');
+    background-image:  linear-gradient(to bottom left, rgba(124, 122, 122, 0.603), rgba(255, 255, 255, 0.641)), url('./images/bodybackground.jpg');
     background-size: auto;
     background-position: center;
     background-repeat: repeat;
@@ -207,13 +207,13 @@ nav .navigation ul li a:hover {
 .btn:hover {
     background-color: #0056b3;
 }
-
 /* Contact Section */
 #Contact {
     margin: auto;
     max-width: 1200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -230,50 +230,76 @@ nav .navigation ul li a:hover {
     padding-top: 2%;
 }
 
-#Contact h3 {
-    color: rgb(35, 35, 85);
-    font-size: 1.2rem;
-    font-weight: 700;
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-#Contact form {
-    padding-top: 3%;
+.contact-form {
+    flex: 1; 
     max-width: 600px;
-    margin: 0 auto;
+    margin-bottom: 5%;
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box; 
+}
+
+.contact-form h3 {
+    margin-top: 0; 
+}
+
+.contact-form form {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-#Contact input,
-#Contact textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
-#Contact textarea {
+.contact-form textarea {
     height: 150px;
 }
 
-#Contact button {
+.contact-form button {
     padding: 12px 30px;
-    background-color:  #FDC93B;
-    color: rgb(21, 21, 100);
+    background-color: rgb(21, 21, 100);
+    color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-#Contact button:hover {
-    background-color: rgb(21, 21, 100);
-    color: #fff;
+.contact-form button:hover {
+    background-color: #FDC93B;
+    color: rgb(21, 21, 100);
+}
+
+.contact-image {
+    max-width: 450px;
+    padding-bottom: 5%;
+}
+
+.contact-image img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Section */
